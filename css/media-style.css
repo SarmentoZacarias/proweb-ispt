@@ -1,0 +1,636 @@
+@media screen and (max-width: 1350px) {
+
+    .footer{
+        padding: 80px 0;
+    }
+
+    .footer-row .menu ul li span{
+        font-size: .85rem;
+    }
+
+    .banner-side-2 .logo-full{
+
+        height: 380px;
+        width: 480px;
+    }
+
+    .banner::before{
+        width: 180px;
+        height: 180px;
+    }
+
+    .banner-side-2::after{
+        top: 80px;
+    }
+
+    .banner-side-2::before{
+        top: 90px;
+    }
+    
+    
+    @keyframes _slide-logo {
+        from { 
+            right: -100%;
+        }
+        to { 
+            right: -1px;
+        }
+    }
+    
+    @keyframes _slide-before {
+        from { 
+            right: -100%;
+        }
+        to { 
+            right: 10px;
+        }
+    }
+    
+    
+    @keyframes _slide-after {
+        from { 
+            right: -100%;
+        }
+        to { 
+            right: 20px;
+        }
+    }
+    
+    
+    @keyframes _slide {
+        from { 
+            top: 100%;
+        }
+        to { 
+            top: 170px;;
+        }
+    }
+
+    .witness .description h2{
+
+        font-size: 1.4rem;
+    }
+
+    .witness .description{
+
+        width: 60%;
+    }
+
+    .news .description{
+
+        width: 100%;
+    }
+
+    .witness .description h3{
+
+        font-size: .95rem;
+    }
+    
+}
+
+@media screen and (max-width: 1200px) {
+
+    .banner-side-2 .logo-full{
+
+        display: none;
+    }
+
+    .card{
+        padding: 0 10px;
+    }
+
+    .card .image{
+
+        height: 250px;
+    }
+
+    .card .title h2{
+        font-size: 2.2rem;
+    }
+
+    .card .description p{
+        font-size: .95rem;
+    }
+
+    .row-4 .title-row h1, .row-2 .title-row h1 {
+        font-size: 3.4rem;
+    }
+
+    .witness .description{
+
+        top: 180px;
+        padding: 20px 10px;
+    }
+
+    .news .description{
+
+        top: 0 !important;
+    }
+
+    .footer .institute-description .footer-logo{
+        width: 140px;
+    }
+
+    .footer-row .menu ul{
+        gap: 10px;
+    }
+}
+
+@media screen and (max-width: 1024px){
+    
+    .nav{
+        width: 95%;
+    }
+
+    .banner-side-1 .banner-title h1{
+
+        font-size: 2.6rem;
+    }
+
+    .banner{
+        height: 450px;
+    }
+
+    .banner-side-2::after{
+        top: 60px;
+        height: 350px;
+        width: 400px;
+    }
+
+    .banner-side-2::before{
+        top: 50px;
+        height: 350px;
+        width: 400px;
+    }
+
+    .info-bar{
+        height: 60px;
+    }
+
+    .info span{
+        font-size: .95rem;
+    }
+
+    .card-middle{
+        border-left: unset;
+        border-right: unset;
+    }
+
+    .card .docment .image{
+        height: 400px;
+    }
+
+    .row-2 .description-row p, .witness .description h2{
+        font-size: 1.2rem;
+    }
+
+    .witness .description{
+        width: 80%;
+    }
+
+    .news .description{
+        width: 100%;
+        padding: 10px;
+    }
+
+    .row-4 .title-row{
+        padding-bottom: 50px;
+    }
+
+    .footer .institute-description .footer-p{
+        font-size: .9rem;
+    }
+
+    .line{
+        grid-template-columns: .5fr 1.5fr;
+    }
+}
+
+@media screen and (max-width: 820px) {
+    
+    .banner-side-2{
+        display: none;
+    }
+
+    .banner-side-1{
+        padding: 0;
+        align-items: center;
+    }
+
+    .banner-side-1 .banner-description p{
+        text-align: center;
+    }
+
+    .banner{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .row-1, .row-3, .activity-row, .witness-row{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .card{
+        width: 80%;
+        padding: 0;
+    }
+
+    .card .image{
+        height: 300px;
+    }
+
+    .witness .image{
+        height: 400px;
+    }
+
+    .row-4 .title-row{
+        padding-bottom: 25px;
+    }
+
+    .witness .description{
+        top: 285px;
+        width: 100%;
+        padding: 10px 0;
+        border: unset;
+    }
+
+    .witness .card{
+
+        padding-bottom: 0;
+    }
+
+    .card .action-btn{
+        padding: 0;
+    }
+
+    .card .description p{
+        font-size: 1.2rem;
+    }
+
+    .card .title h2{
+        font-size: 2.8rem;
+    }
+
+    .activity-row{
+
+        width: 70%;
+    }
+
+    .activity-row .card{
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .card .docment .image{
+        height: 500px;
+    }
+
+    .card .docment .image{
+        width: 100%;
+    }
+
+    .witness{
+        background-color: transparent;
+    }
+
+    .witness .description h3{
+
+        font-size: 1.2rem;
+    }
+
+    .row-2 .description-row p, .witness .description h2{
+        font-size: 1.4rem;
+    }
+
+    .footer .social-media ul{
+        gap: 10px;
+    }
+
+    .footer .social-media ul li{
+        width: 40px;
+        height: 40px;
+    }
+
+    .footer .social-media ul li i{
+        font-size: 1.2rem;
+    }
+
+    .footer-row{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .footer .institute-description .footer-p{
+        font-size: .95rem;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .footer .institute-description .footer-logo{
+        width: 50px;
+    }
+
+    .line{
+
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .footer-row .menu{
+        justify-content: center;
+    }
+
+    .footer .copy-right{
+        text-align: center;
+    }
+
+    .footer .social-media{
+        width: unset;
+    }
+
+    .footer .institute-description{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .menu-items{
+        display: none;
+    }
+
+    .menu-collapse-btn{
+
+        display: block;
+    }
+
+
+#i{
+    opacity: 0;
+    animation: 
+        _visible .5s steps(50) .5s 1 forwards;
+}
+
+#s{
+    opacity: 0;
+    animation: 
+        _visible .5s steps(50) 1s 1 forwards;
+}
+
+#p{
+    opacity: 0;
+    animation: 
+        _visible .5s steps(50) 1.5s 1 forwards;
+}
+
+#t{
+    opacity: 0;
+    animation: 
+        _visible .5s steps(50) 2s 1 forwards;
+}
+
+@keyframes _visible {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+}
+
+@media screen and (max-width: 620px) {
+
+    .row-4 .title-row h1, .row-2 .title-row h1{
+
+        font-size: 2.4rem;
+    }
+
+    .row-4 .title-row{
+        padding-top: 5px;
+        width: 95%;
+    }
+
+    .footer-row .menu{
+        display: none;
+    }
+
+    .footer{
+        padding: 40px 0;
+    }
+
+    .banner-side-1 .banner-title h1{
+        font-size: 2.3rem;
+    }
+
+    .info span{
+        text-overflow: ellipsis;
+    }
+    
+    .witness .description h2{
+
+        padding-bottom: 5px;
+    }
+
+    .witness .description{
+        top: 295px;
+    }
+}
+
+    @media screen and (max-width: 540px) {
+
+        .logo{
+
+            margin-left: 10px;
+        }
+
+        .menu-collapse-btn{
+
+            margin-right: 10px;
+        }
+
+        .banner-side-1 .banner-title h1{
+            text-wrap: wrap;
+            text-align: center;
+        }
+
+        .write-animation {
+            animation: unset;
+        }
+
+        .cursor{
+            border-right: unset;
+        }
+
+        .banner-side-1 .banner-description p{
+            font-weight: 700;
+        }
+
+        .footer .institute-description .footer-logo{
+            border: 1px solid #e3e3e387;
+        }
+
+        .card .title h2{
+            font-size: 2.4rem;
+        }
+    }
+
+    @media screen and (max-width: 450px) {
+
+        .banner-side-1 .banner-description p{
+            font-size: .98rem;
+        }
+
+        .banner-side-1 .banner-title h1{
+            font-size: 2rem;
+        }
+
+        .info span{
+            font-size: .8rem;
+            
+        }
+
+        .card{
+            width: 90%;
+        }
+
+        .row-4 .title-row h1, .row-2 .title-row h1{
+
+            font-size: 2rem;
+        }
+
+        .card .title h2{
+            font-size: 2.1rem;
+        }
+
+        .card .description p{
+            font-size: 1rem;
+        }
+
+        .card .action-btn button, .row-2 .explore-row button, .document.action-btn button{
+            padding: 10px 0;
+            font-size: .85rem;
+        }
+
+        .card .title, .card .description, .card .action-btn{
+            padding: 10px 0;
+        }
+
+        .card .image{
+            height: 280px;
+        }
+
+        .row-2 .description-row p, .witness .description h2{
+            font-size: 1.2rem;
+        }
+
+        .row-2 .explore-row{
+            width: 100%;
+        }
+
+        .card .docment .image{
+            height: 400px;
+        }
+
+        .card .action-btn{
+            margin-top: 10px;
+        }
+
+        .witness .description{
+            padding: 5px 0;
+            top: 198px;
+        }
+
+        .witness .description h3{
+            font-size: .95rem;
+        }
+
+        .row-4 .title-row{
+            padding-bottom: 10px;
+        }
+
+        .content-row{
+            padding: 10px 0;
+        }
+
+        
+    }
+
+@media screen and (max-width: 430px) {
+
+    .footer .institute-description{
+        gap: 5px;
+    }
+
+    .activity-row{
+
+        width: 80%;
+    }
+
+    .row-2 .description-row{
+        padding: 20px;
+    }
+
+    .banner{
+        height: 400px;
+    }
+
+    .banner::before{
+        bottom: -5px;
+        background-color: #fff344f1;
+    }
+
+    .banner-side-1::before{
+        left: -70px;
+        margin-top: -20px;
+        background-color: #ff4444f6;
+    }
+
+    .banner-title{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 390px){
+    
+    .row-2 .explore-row button, .document.action-btn button{
+        width: 95%;
+    }
+
+    .card,  .activity-row{
+        width: 95%;
+    }
+
+    .row-2 .description-row, .row-2 .title-row{
+        width: 90%;
+    }
+
+   .docment .activity-row{
+        width: 85%;
+    }
+
+    .witness{
+        padding: 20px 0;
+    }
+}
+
+@media screen {
+    
+    .image-logo{
+
+        width: 50px;
+        height: 50px;
+    }
+
+    .header-title h2{
+        font-size: 1.8rem;
+    }
+
+    .menu-collapse-btn i{
+        font-size: 1.6rem;
+    }
+}

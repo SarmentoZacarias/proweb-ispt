@@ -1,0 +1,209 @@
+
+/* Animations */
+
+.cursor{
+    position: relative;
+    border-right: 2px solid rgba(255,255,255,.75);
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.write-animation {
+    animation: 
+      _write 4s steps(50) 2s 1 normal both, 
+      _blink 500ms steps(50) infinite normal;
+}
+
+@keyframes _write {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+@keyframes _blink{
+    from { border-right-color: rgba(255,255,255,.75); }
+    to { border-right-color: transparent;}
+}
+
+.logo-animate{
+    top: 100%;
+    opacity: 0;
+    animation: 
+        _slide .5s steps(100) .75s forwards, 
+        _opacity 1s steps(100) .2s 1 forwards;
+}
+
+.logo-full{
+    right: -100%;
+    opacity: 0;
+    animation: 
+        _slide-logo 1.2s steps(100) .2s 1 forwards, 
+        _opacity .5s steps(100) .2s forwards;
+}
+
+.banner-side-2::before{
+    right: -100%;
+    transform: rotate(50deg);
+    animation: 
+        _slide-before 1s steps(100) .7s forwards, 
+        _slide-before-rotate 1s steps(100) .9s forwards;
+}
+
+.banner-side-2::after{
+    right: -100%;
+    transform: rotate(150deg);
+    animation: 
+        _slide-after 1s steps(100) 1s forwards, 
+        _slide-after-rotate 1s steps(100) 1.03s forwards;
+}
+
+@keyframes _slide-logo {
+    from { 
+        right: -100%;
+    }
+    to { 
+        right: -1px;
+    }
+}
+
+@keyframes _slide-before {
+    from { 
+        right: -100%;
+    }
+    to { 
+        right: 60px;
+    }
+}
+
+@keyframes _slide-before-rotate {
+    from {
+        transform: rotate(50deg);
+    }
+
+    to {
+        transform: rotate(5deg);
+    }
+}
+
+@keyframes _slide-after-rotate {
+    from {
+        transform: rotate(150deg);
+    }
+
+    to {
+        transform: rotate(15deg);
+    }
+}
+
+@keyframes _slide-after {
+    from { 
+        right: -100%;
+    }
+    to { 
+        right: 50px;;
+    }
+}
+
+
+@keyframes _slide {
+    from { 
+        top: 100%;
+    }
+    to { 
+        top: 170px;;
+    }
+}
+
+@keyframes _opacity {
+    from {
+        opacity: 0; 
+    }
+    to { 
+        opacity: 1;
+    }
+}
+
+.curve-i{
+    opacity: 0;
+    animation: 
+        _visible .5s steps(50) 1s 1 forwards;
+}
+
+.curve-s{
+    opacity: 0;
+    animation: 
+        _visible .5s steps(50) 1.5s 1 forwards;
+}
+
+.curve-p{
+    opacity: 0;
+    animation: 
+        _visible .5s steps(50) 2s 1 forwards;
+}
+
+.curve-t{
+    opacity: 0;
+    animation: 
+        _visible .5s steps(50) 2.5s 1 forwards;
+}
+
+@keyframes _visible {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+:root{
+color-scheme: light dark;
+
+    --lt-b: #1b641f;
+    --dk-b: #e01f1f;
+}
+/* Effects */
+
+.action-btn button:hover{
+    transform: scale(1.05);
+    transition: .3s;
+    box-shadow: 5px 8px 11px rgb(0 0 0 / 19%);
+}
+
+.explore-row button:hover{
+    transform: scale(1.05);
+    transition: .3s;
+    box-shadow: 5px 8px 11px rgb(0 0 0 / 19%);
+}
+
+.docment:hover .image img{
+    transform: scale(1.05);
+    transition: .3s;
+    filter: blur(2px) grayscale(.8);
+    opacity: .5;
+}
+
+.docment:hover .see-btn{
+    left: 50%;
+    transition: .3s;
+}
+
+ .see-btn button:hover{
+    transition: .3s;
+    left: 50%;
+    background-color: light-dark(var(--lt-b),var(--dk-b));
+}
+
+.witness .image:hover img{
+    filter: grayscale(0);
+    transition: .1s;
+}
+
+.footer .social-media ul li:hover{
+    background-color: #2f8033;
+    transition: .3s;
+}
+
+.footer .social-media ul li:hover i{
+    color: #fff;
+    transition: .3s;
+}
+
+.footer-row .menu ul li:hover span{
+    color: #101310;
+}
