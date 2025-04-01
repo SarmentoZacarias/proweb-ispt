@@ -439,6 +439,10 @@
     .witness .description{
         top: 295px;
     }
+
+    .activity-row{
+        gap: 20px;
+    }
 }
 
     @media screen and (max-width: 540px) {
@@ -618,7 +622,7 @@
     }
 }
 
-@media screen {
+@media screen and (max-width: 375px){
     
     .image-logo{
 
