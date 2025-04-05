@@ -217,6 +217,11 @@
     .line{
         grid-template-columns: .5fr 1.5fr;
     }
+
+    .item-6{
+        top: calc(100vh - 30px);
+        left: calc(100% - 20px);
+    }
 }
 
 @media screen and (max-width: 820px) {
@@ -614,6 +619,11 @@
     .banner-title{
         width: 90%;
     }
+
+    .item-6{
+        top: calc(100vh - 20px);
+        left: calc(100% - 10px);
+    }
 }
 
 @media screen and (max-width: 390px){
@@ -637,6 +647,13 @@
     .witness{
         padding: 20px 0;
     }
+
+    .item-6{
+        top: calc(100vh - 10px);
+        left: calc(100% - 10px);
+        height: 40px;
+        width: 40px;
+    }
 }
 
 @media screen and (max-width: 375px){
@@ -654,4 +671,6 @@
     .menu-collapse-btn i{
         font-size: 1.6rem;
     }
+
+    
 }
