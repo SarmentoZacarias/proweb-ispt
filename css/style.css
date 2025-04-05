@@ -1,6 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
+body{
+    /* -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-smoothing: antialiased;
+    text-rendering: optimizeLegibility; */
+}
 :root {
     color-scheme: light dark;
 
@@ -25,6 +31,103 @@
 
     --lt-filter:.8;
     --dk-filter:.2;
+
+    --lt-btn-color: red;
+    --dk-btn-color: yellow;
+
+    --lt-btn-mode: #fff;
+    --dk-btn-mode: #2C3027;
+
+}
+
+
+@media (prefers-color-scheme: dark) {
+
+    :root{
+        --btn-status-1: none;
+        --btn-status-2: block;
+    }
+
+    #btn1{
+        display: var(--btn-status-1);
+
+    } 
+        
+    #btn2{
+        display: var(--btn-status-2);
+    }  
+
+    body:has(input[name="theme-mode"][value="dk"]:checked){
+
+        color-scheme: light;
+        --btn-status-1: block;
+        --btn-status-2: none;
+    }
+
+}
+
+@media (prefers-color-scheme: light) {
+
+    :root{
+        --btn-status-1: none;
+        --btn-status-2: block;
+    }
+
+    #btn1{
+        display: var(--btn-status-2);
+    } 
+        
+    #btn2{
+        display: var(--btn-status-1);
+    }  
+
+    body:has(input[name="theme-mode"][value="lt"]:checked){
+
+        color-scheme: dark;
+        --btn-status-2: none;
+        --btn-status-1: block;
+    }
+    
+}
+
+#btn1 input, #btn2 input{
+
+    display: none;
+}
+
+#btn1 i, #btn2 i{
+    font-size: 1.4rem;
+    cursor: pointer !important;
+    margin-top: 2px;
+}
+
+.item-6{
+    background-color: none;
+    padding: 5px;
+    position: fixed;
+    top: calc(100vh - 50px);
+    left: calc(100% - 20px);
+    transform: translate(-100%, -100%);
+    width: 50px;
+    height: 50px;
+    background-color: light-dark(var(--lt-btn-mode),var(--dk-btn-mode));
+    border-radius: 50%;
+    z-index: 99999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 5px 8px 11px rgb(0 0 0 / 29%);
+    border: 1px solid #3a3d3541;
+}
+
+#btn1 i{
+
+    color: #2C3027;
+}
+
+#btn2 i{
+
+    color: #fff;
 }
 
 *{
