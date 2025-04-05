@@ -1,5 +1,9 @@
 @media screen and (max-width: 1350px) {
 
+}
+
+@media screen and (max-width: 1350px) {
+
     .footer{
         padding: 80px 0;
     }
@@ -74,8 +78,16 @@
     .witness .description{
 
         width: 60%;
+        padding: 18px;
     }
 
+    .witness .card{
+
+        height: 300px;
+    }
+    .witness{
+        padding-bottom: 100px;
+    }
     .news .description{
 
         width: 100%;
@@ -101,7 +113,7 @@
 
     .card .image{
 
-        height: 250px;
+        min-height: 250px;
     }
 
     .card .title h2{
@@ -118,8 +130,13 @@
 
     .witness .description{
 
-        top: 180px;
         padding: 20px 10px;
+        width: 75%;
+    }
+
+    .witness .card{
+
+        height: 250px;
     }
 
     .news .description{
@@ -244,26 +261,34 @@
         height: 300px;
     }
 
-    .witness .image{
+    /* .witness .image{
         height: 400px;
-    }
+    } */
 
     .row-4 .title-row{
         padding-bottom: 25px;
     }
 
     .witness .description{
-        top: 285px;
+        bottom: 0;
+        transform: translate(-50%,0%);
         width: 100%;
         padding: 10px 0;
         border: unset;
+    }
+    
+    .witness .description h2{
+        padding-bottom: 0;
     }
 
     .witness .card{
 
         padding-bottom: 0;
     }
-
+    .witness{
+        padding-bottom: 25px;
+    }
+    
     .card .action-btn{
         padding: 0;
     }
@@ -434,10 +459,7 @@
     .witness .description h2{
 
         padding-bottom: 5px;
-    }
-
-    .witness .description{
-        top: 295px;
+        font-size: 1.3rem;
     }
 
     .activity-row{
@@ -546,7 +568,6 @@
 
         .witness .description{
             padding: 5px 0;
-            top: 198px;
         }
 
         .witness .description h3{

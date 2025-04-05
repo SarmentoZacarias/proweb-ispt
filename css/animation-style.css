@@ -3,7 +3,7 @@
 
 .cursor{
     position: relative;
-    border-right: 2px solid rgba(255,255,255,.75);
+    /* border-right: 2px solid rgba(255,255,255,.75); */
     white-space: nowrap;
     overflow: hidden;
 }
@@ -28,7 +28,7 @@
     top: 100%;
     opacity: 0;
     animation: 
-        _slide .5s steps(100) .75s forwards, 
+        _slide .5s steps(100) 1s forwards, 
         _opacity 1s steps(100) .2s 1 forwards;
 }
 
@@ -206,4 +206,10 @@ color-scheme: light dark;
 
 .footer-row .menu ul li:hover span{
     color: #101310;
+}
+
+.item:hover{
+    transition: .3s;
+    background-color: #f7ee4398;
+    transform: scale(1.05);
 }
