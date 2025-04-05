@@ -2,11 +2,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 body{
-    /* -webkit-font-smoothing: antialiased;
+    -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     font-smoothing: antialiased;
-    text-rendering: optimizeLegibility; */
+    text-rendering: optimizeLegibility;
 }
+
 :root {
     color-scheme: light dark;
 
@@ -37,9 +38,7 @@ body{
 
     --lt-btn-mode: #fff;
     --dk-btn-mode: #2C3027;
-
 }
-
 
 @media (prefers-color-scheme: dark) {
 
@@ -118,7 +117,9 @@ body{
     justify-content: center;
     box-shadow: 5px 8px 11px rgb(0 0 0 / 29%);
     border: 1px solid #3a3d3541;
+    transition: .5s;
 }
+
 
 #btn1 i{
 

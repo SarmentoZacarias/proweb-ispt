@@ -213,3 +213,8 @@ color-scheme: light dark;
     background-color: #f7ee4398;
     transform: scale(1.05);
 }
+
+.item-6:hover i{
+    transition: .3s;
+    transform: scale(1.1);
+}
