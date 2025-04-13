@@ -609,6 +609,7 @@ body{
     display: flex;
     flex-direction: column;
     padding: 0 30px;
+    justify-content: space-between;
 }
 
 .card .image{
@@ -988,7 +989,7 @@ body{
 }
 
 .footer-row .menu ul li span{
-    font-size: .95rem;
+    font-size: .9rem;
     color: light-dark(var(--l-text), var(--d-text));
 
 }
